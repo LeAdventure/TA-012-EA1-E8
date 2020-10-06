@@ -37,7 +37,7 @@ int main() {
         fflush(stdin);
         getline(cin, str);
         fflush(stdin);
-        regex e("[13478][13478abeilnstrz\.]*\.1847317");
+        regex e("[13478][13478abeilnstrz.]*.1847317");
         regex f("sts.", regex_constants::icase);
         regex g("^(?!.*[.]{2})", regex_constants::icase);
 
