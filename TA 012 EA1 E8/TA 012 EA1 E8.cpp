@@ -2,6 +2,8 @@
 #include <string>
 #include <regex>
 #include <locale.h>
+#include <thread>         
+#include <chrono>
 
 using namespace std;
 
@@ -23,10 +25,12 @@ int main() {
     cout << "Jose Maria Flores San Martin\t\t -\t1859565" << endl;
     cout << "Miguel Eduardo Barragan Elizondo\t -\t1859404" << endl;
     cout << "Sebastian Terrazas Santillana\t\t -\t1847317" << endl;
-    getchar();
+    for (int i = 5; i > 0; --i) {
+        std::this_thread::sleep_for(std::chrono::seconds(1));
+    }
     system("cls");
     fflush(stdin);
-
+    
     do {
         system("cls");
         cout << "Nombre: Sebastian Terrazas Santillana \tMatricula: 1847317" << endl;
